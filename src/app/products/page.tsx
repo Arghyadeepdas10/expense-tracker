@@ -7,7 +7,6 @@ import { Home, User, BarChart2, BadgeDollarSign, CircleUserIcon } from "lucide-r
 import SearchIcon from "@mui/icons-material/Search";
 import { useFetchCategories } from '@/Hooks/React Query/useFetchCategory';
 import { supabase } from '@/utils/supabase/supabaseClient';
-import { useFetchTransactions } from '@/Hooks/React Query/usefetchQuery';
 import Loader from '@/UI/Loader';
 
 interface User {
@@ -100,7 +99,6 @@ export default function Dashboard({ children }: { children: React.ReactNode }) {
     .reduce((sum: any, transaction: { amount: any; }) => sum + transaction.amount, 0);
 
   const balance = totalIncome - totalExpenses;
-
 
   return (
     <div>

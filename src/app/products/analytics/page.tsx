@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { AllCommunityModule, ColDef, ModuleRegistry, GridApi } from "ag-grid-community";
 ModuleRegistry.registerModules([AllCommunityModule]);
 import { AgGridReact } from "ag-grid-react";
-import { useTransactions } from "@/Context/TransactionContext";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 import { useEffect, useMemo, useState } from "react";
 import { useFetchCategories } from "@/Hooks/React Query/useFetchCategory";
