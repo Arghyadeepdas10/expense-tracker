@@ -25,7 +25,7 @@ interface Transact {
   name: string;
 }
 
-export default function Dashboard({ children }: { children: React.ReactNode }) {
+export default function Dashboard() {
   const [user, setUser] = useState<User | any>(null);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
