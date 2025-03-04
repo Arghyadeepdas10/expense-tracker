@@ -1,9 +1,9 @@
 "use client"
 import { createClient } from '@/utils/supabase/client';
-import { Box, Button, Card, Input, InputAdornment, MenuItem, Select, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, Input, MenuItem, Select, TextField, Typography } from '@mui/material';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
-import { Home, User, BarChart2, BadgeDollarSign, CircleUserIcon } from "lucide-react";
+import { Home, User, BarChart2, BadgeDollarSign } from "lucide-react";
 import SearchIcon from "@mui/icons-material/Search";
 import { useFetchCategories } from '@/Hooks/React Query/useFetchCategory';
 import { supabase } from '@/utils/supabase/supabaseClient';
@@ -61,7 +61,7 @@ export default function Dashboard({ children }: { children: React.ReactNode }) {
   }, [router]);
 
   
-  const fetchdata = async (id: any) => {
+  const fetchdata = async (id:any) => {
     if (!user?.id) return;
     const { data, error } = await supabase.from("transactions").select("*").eq("user_id", user.id);
     if (error) {

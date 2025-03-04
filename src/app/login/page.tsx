@@ -28,9 +28,6 @@ interface FormData {
 
 export default function LoginPage() {
 
-  const [email, setEmail] = React.useState<string>("");
-  const [password, setPassword] = React.useState<string>("");
-
   const {
     register,
     handleSubmit,

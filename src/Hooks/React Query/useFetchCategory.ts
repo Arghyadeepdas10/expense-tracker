@@ -6,6 +6,10 @@ interface Category {
   name: string;
 }
 
+interface Item {
+  category: string;
+}
+
 const fetchCategories = async (userId: string): Promise<Category[]> => {
   if (!userId) {
     throw new Error("User ID is required to fetch categories.");
@@ -20,7 +24,7 @@ const fetchCategories = async (userId: string): Promise<Category[]> => {
     throw new Error(error.message);
   }
 
-  const uniqueCategories = data ? Array.from(new Set(data.map((item: any) => item.category))).map((category) => ({ id: category, name: category })): [];
+  const uniqueCategories = data ? Array.from(new Set(data.map((item: Item) => item.category))).map((category) => ({ id: category, name: category })): [];
   console.log("Unique categories:", uniqueCategories);
 
   return uniqueCategories;

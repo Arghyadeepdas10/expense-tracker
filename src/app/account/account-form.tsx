@@ -1,5 +1,5 @@
 'use client'
-import { use, useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { createClient } from '@/utils/supabase/client'
 import { type User } from '@supabase/supabase-js'
 import { Box, Typography, TextField, Button, Card, CardContent } from '@mui/material';

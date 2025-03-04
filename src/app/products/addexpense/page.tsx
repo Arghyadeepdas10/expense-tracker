@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { Box, Button, Card, CardContent, Input, MenuItem, Select, TextField, Typography } from "@mui/material";
-import { BadgeDollarSign, BarChart2, Home, Settings, User } from "lucide-react";
+import { BadgeDollarSign, BarChart2, Home, } from "lucide-react";
 import { useTransactions } from "@/Context/TransactionContext";
 import { supabase } from "@/utils/supabase/supabaseClient";
 import { createClient } from "@/utils/supabase/client";
