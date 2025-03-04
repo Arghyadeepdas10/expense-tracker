@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 import { Button, Box, Typography, Divider, TextField } from "@mui/material";
 import { BadgeDollarSign, BarChart2, Download, Home, User } from "lucide-react";

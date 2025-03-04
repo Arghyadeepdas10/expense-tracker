@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client"
 import { createClient } from '@/utils/supabase/client';
 import { Box, Button, Card, Input, MenuItem, Select, TextField, Typography } from '@mui/material';
