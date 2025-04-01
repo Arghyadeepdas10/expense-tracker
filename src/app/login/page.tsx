@@ -94,7 +94,7 @@ export default function LoginPage() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Welcome to the Expense Tracker
           </Typography>
           <Box
             component="form"
